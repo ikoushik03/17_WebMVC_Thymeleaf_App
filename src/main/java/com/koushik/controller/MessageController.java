@@ -14,4 +14,9 @@ public class MessageController {
 		model.addAttribute("msg", "Hello world");
 		return "home";
 	}
+	@GetMapping("/hello")
+	public String getHello()
+	{
+		return "hello Koushik";
+	}
 }
